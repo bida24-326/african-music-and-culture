@@ -1,6 +1,6 @@
 /* style.css */
 
-/* General Reset */
+/* Reset and base styling */
 * {
   margin: 0;
   padding: 0;
@@ -9,22 +9,22 @@
 }
 
 body {
-  background-color: #fff5f8;
+  background-color: #fff7fa;
   color: #3b2e2e;
   line-height: 1.6;
 }
 
 header {
-  background: #f2b5d4;
+  background: linear-gradient(to right, #fbb1d4, #fac9e1);
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  color: #6b184e;
+  color: #5a1030;
   font-size: 2.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 nav ul {
@@ -36,16 +36,16 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 12px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #6b184e;
+  color: #5a1030;
   font-weight: bold;
-  transition: color 0.3s;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 nav ul li a:hover,
@@ -55,20 +55,21 @@ nav ul li a.active {
 }
 
 .hero {
-  background: linear-gradient(to right, #fce4ec, #fff);
+  background: linear-gradient(to left, #ffe6f0, #fff);
   text-align: center;
   padding: 60px 20px;
+  border-top: 3px solid #ffb3d9;
 }
 
 .hero h2 {
   font-size: 2rem;
   color: #6b184e;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 1.2rem;
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto 25px auto;
   color: #333;
 }
@@ -77,11 +78,11 @@ nav ul li a.active {
   background: #d63484;
   color: white;
   border: none;
-  padding: 12px 25px;
+  padding: 12px 28px;
   font-size: 1rem;
   border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 .hero button:hover {
@@ -91,18 +92,17 @@ nav ul li a.active {
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 40px 20px;
+  gap: 25px;
+  padding: 50px 30px;
   background: #fff0f5;
 }
 
 .feature {
   background: #fff;
-  padding: 20px;
+  padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .feature:hover {
@@ -122,16 +122,60 @@ nav ul li a.active {
   margin-bottom: 10px;
 }
 
-.feature p {
+.feature p,
+.feature ul,
+.feature li {
   font-size: 1rem;
   color: #4b3b3b;
+  line-height: 1.5;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background: #f8c6de;
+  background: #fcd2e5;
   color: #5b2a4f;
   font-size: 0.9rem;
   border-top: 2px solid #e6a5c4;
 }
+
+/* Form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #6b184e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 2px solid #fac9e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.contact-form button {
+  width: fit-content;
+  align-self: flex-start;
+  background: #d63484;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #b91e6e;
+}
+
+
+
+ 
