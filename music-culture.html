@@ -1,0 +1,81 @@
+<!-- music-culture.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music & Culture | Rhythms of Africa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .fade-slide {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeSlideIn 1s forwards ease;
+    }
+    .fade-slide.delay-1 { animation-delay: 0.3s; }
+    .fade-slide.delay-2 { animation-delay: 0.6s; }
+    .fade-slide.delay-3 { animation-delay: 0.9s; }
+
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rhythms of Africa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Music by Region</a></li>
+        <li><a href="music-culture.html" class="active">Music & Culture</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero fade-slide">
+    <h2>Instruments, Artists & Culture</h2>
+    <p>
+      African music is full of life, culture, and expression. Let’s dive into the unique instruments,
+      iconic artists, and deep cultural traditions that make African rhythms so powerful.
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature fade-slide delay-1">
+      <h3>🪘 Traditional Instruments</h3>
+      <ul>
+        <li><strong>Djembe:</strong> A drum used for dance, healing, and celebration in West Africa.</li>
+        <li><strong>Kora:</strong> A 21-string harp from Mali, played by griots to tell stories and history.</li>
+        <li><strong>Mbira:</strong> The "thumb piano" from Zimbabwe, producing calming, spiritual sounds.</li>
+      </ul>
+    </div>
+
+    <div class="feature fade-slide delay-2">
+      <h3>🎤 Modern African Artists</h3>
+      <ul>
+        <li><strong>Davido:</strong> Nigerian superstar known for Afrobeats hits like "Fall" and "Unavailable." He brings joy and high energy to every song.</li>
+        <li><strong>Burna Boy:</strong> Blends Afro-fusion, reggae, and dancehall. His music explores African pride, struggle, and love — global hits include "Ye" and "Last Last."</li>
+        <li><strong>Ayra Starr:</strong> Rising star from Nigeria, known for her soulful voice and catchy songs like "Rush." She’s modern, stylish, and full of girl power.</li>
+      </ul>
+    </div>
+
+    <div class="feature fade-slide delay-3">
+      <h3>🌍 Culture & Celebration</h3>
+      <p>
+        Music is part of daily life in African culture. It brings people together during weddings, births,
+        spiritual events, and harvests. African fashion, dance styles, and traditional festivals also go hand-in-hand with music — it’s all connected!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rhythms of Africa | Designed by Oratile Hikhwa for Web & Multimedia</p>
+  </footer>
+</body>
+</html>
