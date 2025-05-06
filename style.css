@@ -1,0 +1,137 @@
+/* style.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fff5f8;
+  color: #3b2e2e;
+  line-height: 1.6;
+}
+
+header {
+  background: #f2b5d4;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #6b184e;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6b184e;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #d63484;
+  border-color: #d63484;
+}
+
+.hero {
+  background: linear-gradient(to right, #fce4ec, #fff);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #6b184e;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  color: #333;
+}
+
+.hero button {
+  background: #d63484;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #b91e6e;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background: #fff0f5;
+}
+
+.feature {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.03);
+}
+
+.feature img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  color: #b91e6e;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #4b3b3b;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8c6de;
+  color: #5b2a4f;
+  font-size: 0.9rem;
+  border-top: 2px solid #e6a5c4;
+}
