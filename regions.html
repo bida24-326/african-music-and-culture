@@ -1,0 +1,83 @@
+<!-- regions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music by Region | Rhythms of Africa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .fade-in.delay-1 { animation-delay: 0.3s; }
+    .fade-in.delay-2 { animation-delay: 0.6s; }
+    .fade-in.delay-3 { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rhythms of Africa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html" class="active">Music by Region</a></li>
+        <li><a href="instruments.html">Instruments</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="culture.html">Culture Corner</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <h2>Music Across the Continent</h2>
+    <p>
+      Africa is a vast continent, and every region brings its own magical sound and rhythm.
+      Let’s explore how different areas express themselves through music and movement!
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature fade-in delay-1">
+      <h3>🇳🇬 West Africa – Drums & Dance</h3>
+      <p>
+        Known for high-energy drumming and polyrhythms, West Africa’s music is the heartbeat of the continent.
+        Instruments like the Djembe, Talking Drum, and Balafon are used in storytelling, ceremonies, and celebration.
+        Genres like Afrobeats and Highlife come from here too!
+      </p>
+    </div>
+
+    <div class="feature fade-in delay-2">
+      <h3>🇿🇦 Southern Africa – Harmony & Soul</h3>
+      <p>
+        From the joyful sounds of Mbube to the rising beats of Amapiano, Southern African music blends vocal harmony
+        with urban innovation. Artists like Miriam Makeba and Black Coffee showcase the region’s power and elegance.
+      </p>
+    </div>
+
+    <div class="feature fade-in delay-3">
+      <h3>🇪🇹 East Africa – Melody & Message</h3>
+      <p>
+        East Africa’s music is deeply connected to language and tradition. Taarab from Zanzibar and Benga from Kenya
+        tell stories of love, life, and legacy. This region also has rich reggae and gospel influences.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rhythms of Africa | Made with love by Oratile Hikhwa for Web & Multimedia</p>
+  </footer>
+</body>
+</html>
