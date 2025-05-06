@@ -1,0 +1,82 @@
+<!-- instruments.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instruments | Rhythms of Africa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .slide-in {
+      opacity: 0;
+      transform: translateX(-30px);
+      animation: slideIn 1s forwards ease;
+    }
+
+    .slide-in.delay-1 { animation-delay: 0.3s; }
+    .slide-in.delay-2 { animation-delay: 0.6s; }
+    .slide-in.delay-3 { animation-delay: 0.9s; }
+
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rhythms of Africa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Music by Region</a></li>
+        <li><a href="instruments.html" class="active">Instruments</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="culture.html">Culture Corner</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero slide-in">
+    <h2>Traditional African Instruments</h2>
+    <p>
+      African instruments are not just for music — they carry emotion, tell stories, and connect generations.
+      Let’s look at a few iconic ones that bring the beat to life.
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature slide-in delay-1">
+      <h3>🪘 Djembe</h3>
+      <p>
+        Originating from West Africa, the Djembe is a goblet-shaped drum played with bare hands. It’s used in
+        celebrations, storytelling, and even healing rituals. The rhythms speak louder than words.
+      </p>
+    </div>
+
+    <div class="feature slide-in delay-2">
+      <h3>🎼 Kora</h3>
+      <p>
+        A beautiful harp-lute with 21 strings, the Kora is played across Mali, Senegal, and Gambia. Its music is
+        graceful and complex, often used by griots (oral historians) to share family and royal histories.
+      </p>
+    </div>
+
+    <div class="feature slide-in delay-3">
+      <h3>🪈 Mbira</h3>
+      <p>
+        Also called the “thumb piano,” the Mbira is from Zimbabwe and has metal keys plucked to produce
+        a peaceful, echoing melody. It’s used in ceremonies and spiritual rituals.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rhythms of Africa | Designed by Oratile Hikhwa for Web & Multimedia</p>
+  </footer>
+</body>
+</html>
